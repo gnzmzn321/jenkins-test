@@ -5,7 +5,7 @@ pipeline {
         
         stage('github-clone') {
             steps {
-                git branch: 'main', credentialsId: 'github_test', url: '{REPOSITORY URL}'
+                git branch: 'main', credentialsId: 'github-test', url: '{REPOSITORY URL}'
             }
         }
         
